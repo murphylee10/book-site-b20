@@ -1,0 +1,2 @@
+- sorting the books by a dropdown (eg; by ratings, lexicographically, by publication date, etc)
+- have the user query for a specific book: the details will be scraped from goodreads.com and a page will be created with the book's data
