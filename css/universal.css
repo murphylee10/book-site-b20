@@ -11,20 +11,90 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 30%;
+  float: left;
+  width: 20%;
+  height: 100%;
+  margin: 0;
+  /* padding: 1em; */
+  background-color: #67b6f3;
 }
 
 .nav-items {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  text-align: center;
+}
+
+.nav-items li {
+  padding: 0.5em 0;
+  width: 100%;
+}
+
+.nav-items li:hover {
+  cursor: pointer;
+  background-color: #6091b7;
+}
+
+.nav-items a {
+  width: 100%;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.4em;
+  padding: 0.5em;
+  display: block;
 }
 
 .nav-logo {
-  width: 30%;
-  height: 30%;
+  width: 100%;
+  height: 100%;
+  margin: 0 0.5em;
 }
 
 .main-section {
-  margin-left: 25%;
+  margin-left: 20%;
+  padding-left: 5%;
 }
 
 .footer {
+  padding: 20px;
+  padding-top: 1.1em;
+  padding-bottom: 2.5em;
+  margin-top: 30px;
+  background-color: #5b87a8;
+  text-align: center;
+  line-height: 20px;
+  height: 9em;
+  margin-bottom: 0px;
+  margin-left: 20%;
+}
+
+.footer ul {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  list-style-type: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.footer p {
+  font-size: large;
+  font-style: italic, bold;
+}
+
+footer ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgba(46, 52, 103, 0.767); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.footer-title {
+  font-style: oblique;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: underline;
 }
