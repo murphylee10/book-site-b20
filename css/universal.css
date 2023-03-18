@@ -5,6 +5,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .nav-bar {
@@ -20,9 +21,10 @@ body {
 }
 
 .nav-items {
-  list-style-type: none;
+  list-style-type: inside;
   margin-left: 0;
   padding-left: 0;
+  padding-right: 0;
   text-align: center;
 }
 
@@ -47,8 +49,8 @@ body {
 }
 
 .nav-logo {
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
   margin: 0 0.5em;
 }
 
@@ -97,4 +99,33 @@ footer ul li::before {
   font-style: oblique;
   font-family: "Courier New", Courier, monospace;
   text-decoration: underline;
+}
+
+/* MEDIA QUERIES (responsiveness)*/
+@media only screen and (max-width: 1200px) {
+  .nav-items a {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+    position: relative;
+    width: 100%;
+  }
+  .nav-items li {
+    padding: 0 0;
+    width: 100%;
+  }
+
+  .nav-logo {
+    width: 95%;
+    height: 95%;
+    padding-bottom: 0;
+    margin: 0 0;
+  }
+
+  .main-section {
+    margin-left: 0;
+    padding-left: 0;
+  }
 }
