@@ -44,18 +44,28 @@
   flex-wrap: nowrap;
 }
 
+.book-image {
+  height: 70em;
+}
+
 .book-right-display {
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 3em;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .book-display {
     display: flex;
     flex-wrap: wrap;
   }
+  .book-left-display {
+    padding-top: 2em;
+    margin: auto;
+  }
   .book-right-display {
-    padding-top: 1em;
+    padding-top: 0em;
+    padding-right: 1em;
+    margin: auto;
   }
 }
