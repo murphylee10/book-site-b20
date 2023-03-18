@@ -1,1 +1,32 @@
 /* This CSS file contains styling that is specific to the home page */
+.main-section {
+  background-attachment: scroll;
+  background-image: url("/Users/Zuhair/Documents/Second semester/CSCb20/book-site-b20/images/b1.webp");
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+  height: max-content;
+  margin-top: 0;
+}
+
+.main-section h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4.2em;
+  color: rgb(228, 159, 68);
+  text-decoration: underline;
+}
+.main-section img {
+  max-height: 20em;
+  border: 3px solid black;
+}
+
+.main-section .book-title {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2em;
+}
+
+.main-section .book-author {
+  font-family: cursive;
+  font-size: 1.4em;
+}
