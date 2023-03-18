@@ -30,23 +30,31 @@
     </nav>
 
     <!-- Login Content -->
-    <section class="main-section">
-        <h1 class="login-header">Login Page</h1>
-        <label for="username">Enter Username:</label>
-        <input type="text" name="username" placeholder="Username" id="login-username">
-        <input type="submit" value="Submit" id="login-button">
-    </section>
-
-
-    <!-- footer with names of all team members -->
-    <footer class="footer">
-        <h1 class="footer-title">Project Contributors:</h1>
-        <ul>
-            <li>Andrew Tam</li>
-            <li>Zuhair Khan</li>
-            <li>Murphy Lee</li>
-        </ul>
-    </footer>
+    <div class="container">
+        <section class="main-section">
+            <div class="header-container">
+                <h1 class="login-header">Login Page</h1>
+            </div>
+            <div class="form-container">
+                <br>
+                <input type="text" name="username" placeholder="Enter Username" id="login-username">
+                <br>
+                <input type="submit" value="Submit" id="login-button">
+            </div>
+        </section>
+    
+    
+        <!-- footer with names of all team members -->
+        <footer class="footer">
+            <h1 class="footer-title">Project Contributors:</h1>
+            <ul>
+                <li>Andrew Tam</li>
+                <li>Zuhair Khan</li>
+                <li>Murphy Lee</li>
+            </ul>
+        </footer>
+        
+    </div>
 
     <script src="js\login.js"></script>
 </body>

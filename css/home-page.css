@@ -37,6 +37,13 @@
   width: fit-content;
 }
 
+.middle .text a {
+  padding: 0.7em 0.7em;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
 .img_container:hover .book-image {
   opacity: 0.3;
 }
@@ -46,10 +53,11 @@
 }
 
 .text {
-  background-color: #04aa6d;
+  background-color: #4197e3;
   color: white;
-  font-size: 1em;
-  padding: 1em;
+  font-size: 1.3em;
+  border-radius: 5%;
+  /* padding: 1em; */
 }
 
 .main-section .book-title {
