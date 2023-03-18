@@ -63,12 +63,12 @@
   font-size: 1.4em;
 }
 
-.book-display1 {
+/* .book-display1 {
   float: left;
   width: 50%;
   padding-bottom: 2em;
   box-sizing: border-box;
-}
+} */
 
 .book-display {
   float: left;
@@ -80,8 +80,11 @@
 @media only screen and (max-width: 800px) {
   .book-display {
     width: 100%;
+    float: none;
+    text-align: center;
+    /* margin: auto; */
   }
-  .book-display1 {
-    width: 100%;
-  }
+}
+
+@media only screen and (max-width: 600px) {
 }
