@@ -1,3 +1,30 @@
 /* This CSS file contains styles for elements that are universal to every page.
     Some examples: the navbar styling and footer styling
 */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30%;
+}
+
+.nav-items {
+}
+
+.nav-logo {
+  width: 30%;
+  height: 30%;
+}
+
+.main-section {
+  margin-left: 25%;
+}
+
+.footer {
+}
