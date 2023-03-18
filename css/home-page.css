@@ -1,7 +1,7 @@
 /* This CSS file contains styling that is specific to the home page */
 .main-section {
   background-attachment: scroll;
-  background-image: url("/Users/Zuhair/Documents/Second semester/CSCb20/book-site-b20/images/b1.webp");
+  background-image: url("../images/b1.webp");
   background-position: center center;
   background-repeat: none;
   background-size: cover;
