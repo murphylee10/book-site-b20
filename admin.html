@@ -16,8 +16,15 @@
             </li>
             <li><a href="index.html">Home Page</a></li>
             <li><a href="login.html">Login</a></li>
-            <li><a href="book-info.html">Books of the Week</a></li>
+            <li><a href="book-info.html">Books Details</a></li>
             <li><a href="reviews.html">See Reviews</a></li>
+            <script src="js/getUser.js"></script>
+            <script>
+              if (getUser() === "admin") {
+                let navBar = document.querySelector("ul.nav-items");
+                navBar.insertAdjacentHTML("beforeend", "<li><a href='admin.html'>Admin</a></li>");
+              }
+            </script>
         </ul>
     </nav>
 
