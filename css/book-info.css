@@ -1,1 +1,40 @@
 /* This CSS file contains styling that is specific to the book info page */
+.main-section {
+  background-attachment: scroll;
+  background-image: url("/Users/Zuhair/Documents/Second semester/CSCb20/book-site-b20/images/b1.webp");
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+  height: max-content;
+  margin-top: 0;
+  overflow: hidden;
+}
+.main-section h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4em;
+  color: rgb(45, 74, 168);
+  text-decoration: underline;
+  padding: auto;
+}
+
+.book-image {
+  max-height: 25em;
+  border: 3px solid black;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.main-section .book-title {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2em;
+}
+
+.main-section .book-author {
+  font-family: cursive;
+  font-size: 1.4em;
+}
+
+.book-summary {
+  margin-right: 5em;
+}
