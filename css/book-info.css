@@ -38,3 +38,14 @@
 .book-summary {
   margin-right: 5em;
 }
+
+.book-display {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.book-right-display {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 3em;
+}
