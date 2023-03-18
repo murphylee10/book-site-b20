@@ -27,4 +27,42 @@ body {
 }
 
 .footer {
+  padding: 20px;
+  padding-top: 1.1em;
+  padding-bottom: 2.5em;
+  margin-top: 30px;
+  background-color: #5b87a8;
+  text-align: center;
+  line-height: 20px;
+  height: 9em;
+  margin-bottom: 0px;
+}
+
+.footer ul {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  list-style-type: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.footer p {
+  font-size: large;
+  font-style: italic, bold;
+}
+
+footer ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgba(46, 52, 103, 0.767); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.footer-title {
+  font-style: oblique;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: underline;
 }
