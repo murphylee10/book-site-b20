@@ -1,59 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OkayReads Login</title>
-    <link rel="stylesheet" type="text/css" href="css/universal.css" />
-    <link rel="stylesheet" type="text/css" href="css/login.css" />
-  </head>
-  <body>
+        <link rel="stylesheet" type="text/css" href="css/universal.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
     <!-- Navigation Bar -->
-    <nav id="nav-bar">
-      <ul id="nav-items">
-        <li>
-          <img src="images/OkayReadsLogo.png" class="nav-logo" alt="Logo" />
-        </li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="index.html">Home Page</a></li>
-        <li><a href="book-info.html">Books of the Week</a></li>
-        <li><a href="reviews.html">See Reviews</a></li>
-      </ul>
+    <nav class="nav-bar">
+        <ul class="nav-items">
+            <li><img src="images/OkayReadsLogo.png" class="nav-logo" alt="Logo"></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="book-info.html">Books of the Week</a></li>
+            <li><a href="reviews.html">See Reviews</a></li>
+        </ul>
     </nav>
 
     <!-- Login Content -->
+    <section class="main-section">
+        <h1 class="login-header">Login Page</h1>
+        <label for="username">Enter Username:</label>
+        <input type="text" name="username" placeholder="Username" id="login-username">
+        <input type="submit" value="Submit" id="login-button">
+    </section>
 
-    <h1 class="login-header">Login Page</h1>
-    <label for="username">Enter Username:</label>
-    <input
-      type="text"
-      name="username"
-      placeholder="Username"
-      id="login-username"
-    />
-    <input type="submit" value="Submit" id="login-button" />
 
     <!-- footer with names of all team members -->
     <footer class="footer">
-      <h1 class="footer-title">Project Contributors:</h1>
-      <ul>
-        <li>Andrew Tam</li>
-        <li>Zuhair Khan</li>
-        <li>Murphy Lee</li>
-      </ul>
-      <p>OkayReads, Copyright &copy; 2023</p>
+        <h1 class="footer-title">Project Contributors:</h1>
+        <ul>
+            <li>Andrew Tam</li>
+            <li>Zuhair Khan</li>
+            <li>Murphy Lee</li>
+        </ul>
     </footer>
-<<<<<<< HEAD
-    
-    <!-- remove this shit!!!!-->    
-    <div id="tmp"></div>
-    
-    <script src="js\login.js"></script>
 
+    <script src="js\login.js"></script>
 </body>
 </html>
-=======
-  </body>
-</html>
->>>>>>> 8d3d296096ac5c6fc09ff679a4e5c5e5d478f69f
