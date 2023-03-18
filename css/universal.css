@@ -130,6 +130,10 @@ footer ul li::before {
     padding-left: 0;
   }
 
+  .footer {
+    margin-left: 0;
+  }
+
   .footer h1 {
     line-height: 1em;
   }
