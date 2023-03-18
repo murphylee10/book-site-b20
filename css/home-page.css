@@ -77,6 +77,20 @@
   box-sizing: border-box;
 }
 
+@media only screen and (max-width: 1200px) {
+  .middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: relative;
+    top: 0%;
+    left: 28%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: fit-content;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .book-display {
     width: 100%;
@@ -85,6 +99,17 @@
   }
   .main-section {
     text-align: center;
+  }
+  .middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: fit-content;
   }
 }
 

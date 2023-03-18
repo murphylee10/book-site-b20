@@ -49,3 +49,13 @@
   padding-right: 2em;
   padding-top: 3em;
 }
+
+@media only screen and (max-width: 1000px) {
+  .book-display {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .book-right-display {
+    padding-top: 1em;
+  }
+}
