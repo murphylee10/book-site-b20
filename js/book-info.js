@@ -26,4 +26,5 @@ function storeReview() {
     localStorage.setItem("reviewUser" + String(reviewNum), getUser());
     localStorage.setItem("reviewTitle" + String(reviewNum), title);
     localStorage.setItem("reviewText" + String(reviewNum), reviewText);
+    alert("Submitted!");
 }
