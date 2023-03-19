@@ -1,5 +1,3 @@
-//our list of users
-let users = ["admin", "Andrew", "Zuhair", "Murphy"];
 //username field from login.html
 let usernameField = document.querySelector("#login-username");
 //submit button from login.html
@@ -9,17 +7,10 @@ usernameSubmit.addEventListener("click", logUser);
 function logUser() {
     //get the username from the username field
     let username = usernameField.value;
-    //find out which position corresponds to the given username
-    let pos = -1;
-    for (let i = 0; i < users.length; ++i) {
-        if (username === users[i]) {
-            pos = i;
-        }
-    }
-    //if the username is not in our list of users,
+    //if the username is empty
     //alert the user and terminate the function
-    if (pos === -1) {
-        alert("Please enter a valid username.");
+    if (username === "") {
+        alert("Please enter an username.");
         return;
     }
     //store the username in local storage 
