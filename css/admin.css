@@ -1,79 +1,119 @@
 /* This CSS file contains styling that is specific to the admin page */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+/* set flex container */
 .container {
+  /* size property */
   height: 100vh;
+
+  /* layout properties */
   display: flex;
   flex-direction: column;
 }
 
+/* main section styling (background images, scrolling property, etc) */
 .main-section {
+  /* alignment */
   text-align: center;
+
+  /* background image properties */
   background-attachment: scroll;
   background-image: url("../images/b1.webp");
   background-position: center center;
   background-repeat: none;
   background-size: cover;
+
+  /* size and spacing */
   height: max-content;
   margin-top: 0;
-  /* overflow: hidden; */
   flex-basis: 85%;
 }
+
+/* style header of main section */
 .admin-header {
+  /* text properties */
   text-align: center;
   font-family: "Montserrat", "Courier New", Courier, monospace;
   font-size: 3.5em;
+
+  /* spacing */
   margin-bottom: 0;
   margin-top: 0.6em;
 }
 
+/* style sub-header of main section */
 .admin-sub-header {
+  /* font alignment and style */
   text-align: center;
   font-family: "Montserrat", "Courier New", Courier, monospace;
   font-size: 1.5em;
+
+  /* spacing */
   margin-top: 0.2em;
 }
 
-.main-section .footer {
+/* footer flex property */
+.container .footer {
   flex-basis: 15%;
-  /* position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center; */
 }
 
+/* set block elements so they're not in the same line */
 label,
 .book-choices {
   display: block;
 }
 
+/* add spacing to dropdown labels */
 label {
+  /* spacing */
   margin-bottom: 0.3em;
+
+  /* font properties */
   font-family: "Montserrat", "Courier New", Courier, monospace;
   font-size: 1.2em;
 }
 
+/* space dropdowns */
 .book-choices {
+  /* spacing */
   margin: auto;
   margin-bottom: 2em;
+
+  /* text */
   font-family: "Montserrat", "Courier New", Courier, monospace;
 }
 
+/* style submit button */
 .main-section #submit-button {
+  /* spacing */
   margin-top: 1.5em;
+  padding: 0.2em;
+
+  /* font */
   font-family: "Montserrat";
   font-size: 1.2em;
-  padding: 0.2em;
+
+  /* shape and aesthetic */
+  border-style: outset;
   border-radius: 10%;
   background: #40a5df;
   color: white;
-  border-style: outset;
   border-color: #0066a2;
+  text-shadow: none;
+
+  /* size */
   height: 50px;
   width: 100px;
-  text-shadow: none;
 }
 
+/* animate dropdown menus */
+.book-choices:hover {
+  cursor: pointer;
+  background-color: #40a5df;
+}
+
+/* animate button */
 .main-section #submit-button:hover {
   cursor: pointer;
+  background-color: rgb(66, 93, 114);
   box-shadow: 5px 10px rgba(0, 0, 0, 0.3);
 }

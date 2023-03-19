@@ -1,39 +1,63 @@
 /* This CSS file contains styling that is specific to the reviews page */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+
+/* set flex container */
 .container {
+  /* size property */
   height: 100vh;
+
+  /* layout properties */
   display: flex;
   flex-direction: column;
 }
 
 .main-section {
+  /* alignment */
   text-align: center;
+
+  /* background image properties */
   background-attachment: scroll;
   background-image: url("../images/b1.webp");
   background-position: center center;
   background-repeat: none;
   background-size: cover;
+
+  /* size and spacing */
   height: max-content;
   margin-top: 0;
+  padding-left: 0;
+
+  /* flex and miscellaneous */
   overflow-y: scroll;
   flex-basis: 85%;
-  padding-left: 0;
 }
 
+/* style header of main section */
+.main-section .review-header {
+  font-family: "Montserrat", "Courier New", Courier, monospace;
+  font-size: 3.5em;
+}
+
+/* style the container for reviews */
 .review-container {
+  /* style */
   border: 1px solid;
+
+  /* spacing */
   width: 50%;
   margin: auto;
   padding: 1em 1.5em;
   box-sizing: border-box;
 }
 
+/* set font of all text elements */
 .review-title,
 .review-user,
 .review-container {
   font-family: "Montserrat", "Courier New", Courier, monospace;
 }
 
+/* align the review to the left of the parent */
 .review-content {
   text-align: left;
 }

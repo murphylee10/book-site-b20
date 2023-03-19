@@ -2,91 +2,132 @@
     Some examples: the navbar styling and footer styling
 */
 
+/* remove default styling from browser */
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
+/* navigation menu style */
 .nav-bar {
+  /* positioning to the left */
   position: fixed;
   top: 0;
   left: 0;
   float: left;
+
+  /* siding */
   width: 20%;
   height: 100%;
+
+  /* more spacing */
   margin: 0;
-  /* padding: 1em; */
+
+  /* aesthetic */
   background-color: #67b6f3;
 }
 
+/* navigation items */
 .nav-items {
+  /* remove ul bullets */
   list-style-type: inside;
+
+  /* spacing */
   margin-left: 0;
   padding-left: 0;
   padding-right: 0;
+
+  /* align text to center */
   text-align: center;
 }
 
+/* ul elements */
 .nav-items li {
+  /* spacing */
   padding: 0.5em 0;
   width: 100%;
 }
 
+/* animate navigation items */
 .nav-items li:hover {
   cursor: pointer;
   background-color: #6091b7;
 }
 
+/* links in navigation */
 .nav-items a {
+  /* size */
   width: 100%;
+
+  /* aesthetic */
   text-decoration: none;
   color: #000000;
+
+  /* font */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.4em;
+
+  /* spacing and block */
   padding: 0.5em;
   display: block;
 }
 
+/* resize logo */
 .nav-logo {
   width: 95%;
   height: 95%;
   margin: 0 0.5em;
 }
 
+/* spacing of main section to account for nav */
 .main-section {
   margin-left: 20%;
   padding-left: 5%;
 }
 
+/* footer */
 .footer {
+  /* spacing */
   padding: 20px;
   padding-top: 1.4em;
   padding-bottom: 2.5em;
   margin-top: 0px;
-  background-color: #5b87a8;
-  text-align: center;
-  line-height: 20px;
-  height: 9em;
   margin-bottom: 0px;
   margin-left: 20%;
+
+  /* aesthetic */
+  background-color: #5b87a8;
+
+  /* alignment */
+  text-align: center;
+  line-height: 20px;
+
+  /* sizing */
+  height: 9em;
   clear: both;
 }
 
+/* footer styling */
 .footer ul {
+  /* font */
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  list-style-type: none;
-  color: rgb(0, 0, 0);
   text-align: center;
   font-size: 1.1em;
+
+  /* aesthetic */
+  list-style-type: none;
+  color: rgb(0, 0, 0);
 }
 
+/* footer */
 .footer p {
   font-size: large;
   font-style: italic, bold;
 }
 
+/* footer  */
 footer ul li::before {
   content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: rgba(46, 52, 103, 0.767); /* Change the color */
@@ -96,6 +137,7 @@ footer ul li::before {
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
+/* footer title */
 .footer-title {
   font-style: oblique;
   font-family: "Courier New", Courier, monospace;
@@ -103,6 +145,7 @@ footer ul li::before {
 }
 
 /* MEDIA QUERIES (responsiveness)*/
+/* move nav bar to top, resize other elements */
 @media only screen and (max-width: 1200px) {
   .nav-items a {
     font-size: 1em;
