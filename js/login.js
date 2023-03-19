@@ -4,6 +4,7 @@ let usernameField = document.querySelector("#login-username");
 let usernameSubmit = document.querySelector("#login-button");
 usernameSubmit.addEventListener("click", logUser);
 
+/* this function logs in the user according to the "username" field */
 function logUser() {
     //get the username from the username field
     let username = usernameField.value;

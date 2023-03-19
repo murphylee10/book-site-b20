@@ -6,6 +6,7 @@ let textField = document.querySelector("#review-input");
 let reviewSubmit = document.querySelector("#review-submit");
 reviewSubmit.addEventListener("click", storeReview);
 
+/* This function stores a user review in local storage */
 function storeReview() {
     //get the title and the text for the review
     let title = titleField.value;

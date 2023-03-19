@@ -8,6 +8,7 @@ for (let i = 0; i < 5; i++) {
     addBookSection(getBook(i));
 }
 
+/* This function dynamically adds a book section to the HTML*/
 function addBookSection(title) {
     book_data = window.localStorage.getItem('bookData');
     if (book_data == null) {
@@ -17,7 +18,7 @@ function addBookSection(title) {
     let bookDisplay = document.createElement('div');
     bookDisplay.classList.add('book-display');
 
-    // add title, author, and image to div
+    // create title, author, and image container elements
     let title_el = document.createElement('h2');
     title_el.classList.add('book-title');
     title_el.innerHTML = title;
@@ -28,13 +29,17 @@ function addBookSection(title) {
 
     let img_div = document.createElement('div');
     img_div.classList.add('img_container');
+
     let img = document.createElement('img');
     img.src = book_data[title]['img-url'];
     img.classList.add('book-image');
+
     let middle_div = document.createElement('div');
     middle_div.classList.add('middle');
+
     let text_div = document.createElement('div');
     text_div.classList.add('text');
+
     let a_el = document.createElement('a');
     a_el.href = `book-info.html#book-title${book_data[title]['rel']}`;
     a_el.innerHTML = "More info"
@@ -48,8 +53,6 @@ function addBookSection(title) {
     bookDisplay.appendChild(author_el);
     bookDisplay.appendChild(img_div);
 
+    // add overall display to main section
     main_section.appendChild(bookDisplay);
-
-
-
 }

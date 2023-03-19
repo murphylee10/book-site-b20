@@ -1,3 +1,4 @@
+/* This function gets the title of a book according to the specified index */
 function getBook(bookNum) {
     //returns the book numbered bookNum in the list
     //precondition: 1 <= bookNum <= 5

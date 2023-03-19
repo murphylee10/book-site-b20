@@ -1,4 +1,4 @@
-/* We store data for books here */
+/* We store the default data for books (pre-local storage) here */
 const bookData = {
     "The Maid": {
         "author": "Nita Prose",

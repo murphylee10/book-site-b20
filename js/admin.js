@@ -8,6 +8,7 @@ for (let i = 0; i < 5; ++i) {
 let bookSubmit = document.querySelector("#submit-button")
 bookSubmit.addEventListener("click", getOrder);
 
+/* This function sets the order of the books in local storage according to user input */
 function getOrder() {
     //push all of the books to a list
     let bookList = [];
