@@ -12,6 +12,10 @@ function storeReview() {
         alert("Please log in first.");
         return;
     }
+    if (reviewText === "") {
+        alert("Please enter a review.");
+        return;
+    }
     let reviewNum = localStorage.getItem("numReviews");
     if (reviewNum === null) {
         reviewNum = 1;
