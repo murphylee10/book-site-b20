@@ -18,7 +18,7 @@ function storeReview() {
     } else {
         reviewNum = Number(reviewNum) + 1;
     }
-    localStorage.setItem("numReviews", reviewNum);
+    localStorage.setItem("numReviews", String(reviewNum));
     localStorage.setItem("reviewUser" + String(reviewNum), getUser());
     localStorage.setItem("reviewTitle" + String(reviewNum), title);
     localStorage.setItem("reviewText" + String(reviewNum), reviewText);
