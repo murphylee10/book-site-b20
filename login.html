@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OkayReads Login</title>
+        <!-- stylesheets for universal elements and login page -->
         <link rel="stylesheet" type="text/css" href="css/universal.css">
         <link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
@@ -19,6 +20,7 @@
             <li><a href="login.html">Login</a></li>
             <li><a href="book-info.html">Book Details</a></li>
             <li><a href="reviews.html">See Reviews</a></li>
+            <!-- display admin option if the user is an admin -->
             <script src="js/getUser.js"></script>
             <script>
             if (getUser() === "admin") {
@@ -55,7 +57,7 @@
         </footer>
         
     </div>
-
+    <!-- javascript files -->
     <script src="js\login.js"></script>
 </body>
 </html>

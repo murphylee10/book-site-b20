@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OkayReads Books of the Week</title>
-    <!-- stylesheets for universal elements and home page -->
+    <!-- stylesheets for universal elements and book-info page -->
     <link rel="stylesheet" type="text/css" href="css/universal.css" />
     <link rel="stylesheet" type="text/css" href="css/book-info.css" />
   </head>
@@ -40,7 +40,9 @@
       <h1 class="book-details-header">Books Details:</h1>
       <!-- Book information is loaded dynamically in book-info.js -->
 
+      <!-- review section (add review) -->
       <h1 class="review-header">Add Review</h1>
+      <!-- user chooses book to review -->
       <select name="book-choice" id="review-book-choice">
         <option value="The Maid" selected>The Maid</option>
         <option value="Sea of Tranquility">Sea of Tranquility</option>
@@ -48,12 +50,14 @@
         <option value="House of Sky and Breath">House of Sky and Breath</option>
         <option value="The Final Gambit" selected>The Final Gambit</option>
       </select>
+      <!-- input box -->
       <textarea
         type="text"
         name="review"
         id="review-input"
         placeholder="Add Review"
       ></textarea>
+      <!-- submit button -->
       <input type="submit" id="review-submit" value="Submit Review" />
     </section>
 
