@@ -48,21 +48,6 @@
   text-shadow: none;
 }
 
-.main-section #login-button {
-  margin-top: 1.5em;
-  font-family: "Montserrat";
-  font-size: 1.2em;
-  padding: 0.2em;
-  border-radius: 10%;
-  background: #40a5df;
-  color: white;
-  border-style: outset;
-  border-color: #0066a2;
-  height: 50px;
-  width: 100px;
-  text-shadow: none;
-}
-
 .main-section #login-button:hover {
   cursor: pointer;
   box-shadow: 5px 10px rgba(0, 0, 0, 0.3);

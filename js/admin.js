@@ -27,4 +27,5 @@ function getOrder() {
     for (let i = 0; i < 5; ++i) {
         localStorage.setItem("book" + String(i + 1), bookList[i]);       
     }
+    alert("Submitted Successfully.");
 }

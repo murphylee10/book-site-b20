@@ -33,7 +33,7 @@
     </nav>
 
     <section class="main-section">
-      <h1>Books Details:</h1>
+      <h1 class="book-details-header">Books Details:</h1>
       <!-- Book 1 -->
 
       <div class="book-display">
@@ -248,7 +248,9 @@
           </p>
         </div>
       </div>
-      <h1>Add Review</h1>
+
+
+      <h1 class="review-header">Add Review</h1>
       <select name="book-choice" id="review-book-choice">
         <option value="The Maid" selected>The Maid</option>
         <option value="Sea of Tranquility">Sea of Tranquility</option>
@@ -256,12 +258,11 @@
         <option value="House of Sky and Breath">House of Sky and Breath</option>
         <option value="The Final Gambit" selected>The Final Gambit</option>
       </select>
-      <input
+      <textarea
         type="text"
         name="review"
         id="review-input"
-        placeholder="Add Review"
-      />
+        placeholder="Add Review"></textarea>
       <input type="submit" id="review-submit" value="Submit Review" />
     </section>
 
