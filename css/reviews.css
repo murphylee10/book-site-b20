@@ -4,7 +4,7 @@
 /* set flex container */
 .container {
   /* size property */
-  height: 100vh;
+  /* height: 100vh; */
 
   /* layout properties */
   display: flex;
