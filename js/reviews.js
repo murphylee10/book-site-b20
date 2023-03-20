@@ -56,8 +56,35 @@ function displayReview(num) {
     review_container.appendChild(review_title);
     review_container.appendChild(review_user);
     review_container.appendChild(review_content);
+    if (getReviewUser(num) === getUser() || getUser() === "admin" ) {
+        let delete_button = document.createElement("input");
+        delete_button.type = "submit";
+        delete_button.value = "Delete Review";
+        delete_button.classList.add("delete-button");
+        delete_button.addEventListener('click', delete_review)
+        review_container.appendChild(delete_button)
+    }
     main_section.appendChild(review_container);
 }
 
+/* this function removes the review from the html and deletes it in local storage*/
+function delete_review(event) {
+    let parent = event.target.parentElement;
+    let main_section = document.querySelector('.main-section');
+
+    // delete item from local storage
+    let index_of_deletion = Array.prototype.indexOf.call(main_section.children, parent);
+    while (localStorage.getItem(`reviewUser${index_of_deletion + 1}`) !== null) {
+        localStorage.setItem(`reviewUser${index_of_deletion}`, String(localStorage.getItem(`reviewUser${index_of_deletion + 1}`)));
+        localStorage.setItem(`reviewTitle${index_of_deletion}`, String(localStorage.getItem(`reviewTitle${index_of_deletion + 1}`)));
+        localStorage.setItem(`reviewText${index_of_deletion}`, String(localStorage.getItem(`reviewText${index_of_deletion + 1}`)));
+        index_of_deletion += 1
+    }
+    localStorage.removeItem(`reviewUser${index_of_deletion}`);
+    localStorage.removeItem(`reviewTitle${index_of_deletion}`);
+    localStorage.removeItem(`reviewText${index_of_deletion}`);
+    localStorage.setItem(`numReviews`, Number(localStorage.getItem(`numReviews`) - 1)); 
+    main_section.removeChild(parent);
+}
 
 

@@ -57,6 +57,35 @@
   font-family: "Montserrat", "Courier New", Courier, monospace;
 }
 
+/* style delete button */
+.main-section .delete-button {
+  /* spacing */
+  margin-top: 1.5em;
+  padding: 0.2em;
+
+  /* font */
+  font-family: "Montserrat";
+  font-size: 1.2em;
+
+  /* shape and aesthetic */
+  border-style: outset;
+  background: #40a5df;
+  color: white;
+  border-color: #0066a2;
+  text-shadow: none;
+
+  /* size */
+  height: 50px;
+  width: 150px;
+}
+
+/* animate submit button */
+.delete-button:hover {
+  cursor: pointer;
+  background-color: rgb(66, 93, 114);
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 /* align the review to the left of the parent */
 .review-content {
   text-align: left;
